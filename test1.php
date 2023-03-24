@@ -11,7 +11,7 @@ foreach($csv as $row) {
     $email = $row[2];
     $stmt = $conn->query('INSERT INTO users (`name`, `surname`, `email`) 
     VALUES ("'.$name.'","'.$surname.'","'.$email.'")'); 
-
+echo "hi php";
 }
 
 $conn->close();
